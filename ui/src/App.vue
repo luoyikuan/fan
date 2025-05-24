@@ -90,9 +90,9 @@ const pwmInput = () => {
 
       <!-- 温度 -->
       <el-col :span="8">
-        <el-progress type="dashboard" :percentage="model.rpm / 1550 * 100" :indeterminate="true">
+        <el-progress type="dashboard" :percentage="model.temperature / 50 * 100" :indeterminate="true">
           <template #default="{ percentage }">
-            <span class="percentage-value">{{ model.rpm }}℃</span>
+            <span class="percentage-value">{{ model.temperature }}℃</span>
             <span class="percentage-label">
               <img src="@/assets/temperature.svg" style="width: 25px;" />
             </span>
@@ -102,9 +102,9 @@ const pwmInput = () => {
 
       <!-- 湿度 -->
       <el-col :span="8">
-        <el-progress type="dashboard" :percentage="model.rpm / 1550 * 100" :indeterminate="true">
+        <el-progress type="dashboard" :percentage="model.humidity" :indeterminate="true">
           <template #default="{ percentage }">
-            <span class="percentage-value">{{ model.rpm }}%RH</span>
+            <span class="percentage-value">{{ model.humidity }}%</span>
             <span class="percentage-label">
               <img src="@/assets/humidity.svg" style="width: 30px;" />
             </span>
@@ -132,7 +132,7 @@ main {
   .percentage-value {
     display: block;
     margin-top: 10px;
-    font-size: 28px;
+    font-size: 22px;
   }
 
   .percentage-label {
