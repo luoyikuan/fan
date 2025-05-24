@@ -9,10 +9,10 @@
 const char *ssid = "OpenWrt";       // WiFi名称
 const char *password = "Luo123456"; // WiFi密码
 
-const char *mqtt_broker = "119.3.49.142"; // mqtt服务器
-const int mqtt_port = 1883;               // mqtt端口
-const char *mqtt_username = "root";       // mqtt用户名
-const char *mqtt_password = "root";       // mqtt密码
+const char *mqtt_broker = "";       // mqtt服务器
+const int mqtt_port = 1883;         // mqtt端口
+const char *mqtt_username = "username"; // mqtt用户名
+const char *mqtt_password = "password"; // mqtt密码
 
 #define DHTPIN D4
 #define DHTTYPE DHT11
