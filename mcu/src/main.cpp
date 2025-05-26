@@ -17,8 +17,8 @@ const char *mqtt_password = "password"; // mqtt密码
 #define DHTPIN D4
 #define DHTTYPE DHT11
 
-#define PWMPIN D1
-#define FGPIN D2
+#define PWMPIN D0
+#define FGPIN D7
 
 Ticker ticker;
 WiFiClient wifiClient;
